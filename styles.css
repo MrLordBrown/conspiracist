@@ -21,18 +21,31 @@ h2 {
 }
 #bottom {
   display: inline-grid;
-  grid-template-areas: "profile special";
+  grid-template-areas: "title title"
+  "sub host"
+  "players host"
+  "profile special";
   grid-template-columns: 50vw 50vw;
-  grid-template-rows: 25vh;
+  grid-template-rows: 15vh 5vh 55vh 30vh;
 }
 
+#title {
+  grid-area: title;
+}
+#sub {
+  grid-area: sub;
+}
+#players {
+  grid-area: players;
+}
 #special {
-  grid-area: "special;";
+  grid-area: "special";
   background-color: gray;
 }
 #bio {
   grid-area: "profile";
   background-color: teal;
+  margin: 1vw;
 }
 
 ul {
